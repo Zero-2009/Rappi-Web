@@ -1,0 +1,10 @@
+:root {
+    --mainColor: rgba(255, 0, 0, 10)
+}
+html {
+	box-sizing: border-box; /* Prevents sudden growth of the box */
+	font-size: 62.5%; /*1rem = 10px*/
+}
+*, *:before, *:after {
+	box-sizing: inherit; /* Follow the same size rule in html*/
+}
