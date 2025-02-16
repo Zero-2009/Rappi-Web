@@ -6,11 +6,11 @@
 	--colorTest3: rgb(0, 0, 255);
 }
 html {
-	box-sizing: border-box; /* Prevents sudden growth of the box */
-	font-size: 62.5%; /*1rem = 10px*/
+	box-sizing: border-box; 
+	font-size: 62.5%;
 }
 *, *:before, *:after {
-	box-sizing: inherit; /* Follow the same size rule in html*/
+	box-sizing: inherit;
 }
 a {
 	color: black;
@@ -30,7 +30,6 @@ svg {
 	background-color: transparent;
 	gap: 16px;
 }
-
 /* Header section menu */
 .content-header__menu {
 	width: 88px;
@@ -52,7 +51,6 @@ svg {
 	height: 25px;
 	display: flex;
 }
-
 /* Header section location*/
 .content-header__location {
 	width: 122px;
@@ -76,13 +74,11 @@ svg {
 	font-family: "Nunito", sans-serif;
 	font-weight: 750;
 }
-.icon_location path,
-.icon_arrow path {
+.icon_location path, .icon_arrow path {
 	width: 24px;
 	height: 24px;
 	fill: var(--colorMain);
 }
-
 /* Header section bar*/
 .content-header__bar {
 	width: 100%;
@@ -136,6 +132,7 @@ svg {
 	align-items: center;
 	justify-content: center;
 }
+/* Header section login*/
 .content-login {
 	display: flex;
 	align-items: center;
@@ -148,8 +145,134 @@ svg {
 	line-height: 1.71;
 	color: rgb(106, 105, 110);
 }
+/* Header section shopping cart*/
 .content-shoppingCart {
 	border-left: 1px solid rgb(230, 235, 241);
 	margin: 25px 0px;
 	padding-left: 16px;	
+}
+
+/* Section Main*/
+.content_main {
+	width: 100%;
+	height: 1927.360px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* Section img and notices*/
+.content_main--information {
+	min-width: 100%;
+	height: 537.070px;
+	padding: 0px 16px 56px 112px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: right bottom;
+	border-top: 1px solid rgb(230, 235, 241);
+	background-image: url(https://images.rappi.com/cms-web/images/bg_image_tablet_1440_a7dfd55d2c.webp?q=70);
+}
+.content_main--informationTitle {
+	width: 95%;
+	height: 179.961px;
+	margin-top: 150px;
+	text-align: left;
+	display: block;
+}
+.content_main--informationTitle p {
+	width: auto;
+	height: auto;
+	font-size: 72px;
+	font-family: "Goldplay-Bold", sans-serif;
+	font-weight: 800;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: rgb(46, 44, 54);
+	margin: 0px;
+}
+.content_main--informationText {
+	width: 686.875px;
+	height: 39.121px;
+	text-align: center;
+}
+.content_main--informationText p {
+	width: auto;
+	height: auto;
+	font-size: 24px;
+	font-family: "Nunito", sans-serif;
+	font-weight: 400;
+	line-height: 1.63;
+	letter-spacing: normal;
+	color: rgb(46, 44, 54);
+	margin: 0px;
+	overflow: hidden;
+	position: relative;
+}
+.content_main--informationImg {
+	width: 300px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 20px;
+	transform: translate3d(0px, 0px, 0px);
+	content-visibility: visible;
+	padding-top: 20px;
+}
+.content_main--informationImg img {
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	opacity: 0;
+	transform: scale(0);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+/* Trasition of icons hamburguer, pizza, sushi and ramen*/
+.content_main--informationImg img:nth-child(1) { animation: scaleFade 8s infinite 0s; }
+.content_main--informationImg img:nth-child(2) { animation: scaleFade 8s infinite 2s; }
+.content_main--informationImg img:nth-child(3) { animation: scaleFade 8s infinite 4s; }
+.content_main--informationImg img:nth-child(4) { animation: scaleFade 8s infinite 6s; }
+@keyframes scaleFade {
+	0%, 25% { opacity: 0; transform: scale(0); }
+	30%, 50% { opacity: 1; transform: scale(1); }
+	55%, 100% { opacity: 0; transform: scale(0); }
+}
+/* Section of subtitles*/
+.content_main--informationSubtitle {
+	margin-bottom: 40px;
+}
+.content_main--informationSubtitle p {
+	font-size: 14px;
+	font-family: "Nunito", sans-serif;
+	font-weight: 400;
+	line-height: 1.71;
+	letter-spacing: normal;
+	color: rgb(46, 44, 54);
+	margin: 0px;
+	text-decoration: underline;
+}
+.content_main--informationPideAhora {
+	padding: 11px;
+	text-align: center;
+	background-color: rgb(46, 44, 54);
+	border-radius: 8px;
+	box-sizing: border-box;
+	text-decoration: none;
+	width: 100%;
+	max-width: 320px;
+	z-index: 1;
+}
+.content_main--informationPideAhora p {
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	font-family: "Nunito", sans-serif;
+	font-weight: 800;
+	line-height: 1.63;
+	letter-spacing: normal;
+	margin: 0px;
+	padding: 0px;
 }
