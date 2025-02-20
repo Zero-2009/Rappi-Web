@@ -300,6 +300,7 @@ svg {
 	line-height: 1.5;
 	margin-bottom: 16px;
 	margin-top: 0px;
+	color: #2e2c36;
 }
 .content__main--articleQuestion--Restaurants {
 	width: 100%;
@@ -375,12 +376,12 @@ svg {
 .ArrowsToLeftRight {
 	width: 100%;
 	height: 28px;
-	margin-bottom: 20px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	margin-top: 0px;
 	margin-right: 10px;
+	margin-bottom: 8px;
 }
 .ArrowsToLeftRight svg {
 	width: 28px;
@@ -390,25 +391,242 @@ svg {
 	border-radius: 50%;
 	padding-right: 4px;
 }
+
+/* Items we offert to public*/
 .ItemsWeOffert {
 	width: 100%;
 	height: 161.992px;
 	display: flex;
 	flex-direction: row;
-	background-color: var(--colorTest);
+	margin-left: 40px;
 }
 .Box-Information {
-	width: 161.992px;
-	height: 121.992px;
-	background-color: black;
+	width: 162px;
+	height: 162px;
 	padding: 20px 0px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	border-radius: 8px;
-	background-color: rgb(255, 255, 255);
 	cursor: pointer;
 	text-decoration: none;
 	min-width: 104px;
+}
+.Box-Information img{
+	width: 100px;
+	height: 100px;
+}
+.Box-Information p {
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+	text-transform: capitalize;
+	color: rgb(46, 44, 54);
+	font-family: "Nunito", sans-serif;
+}
+.content__main--articleMoreSearch {
+	width: 100%;
+	height: 80.019px;
+	margin: 16px 36px 0px 36px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.content__main--articleMoreSearch p {
+	width: 100%;
+	height: 30px;
+	font-family: "Nunito", sans-serif;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 1.5;
+	letter-spacing: 0;
+	margin: 0px;
+}
+.items-More-Search {
+	width: 100%;
+	height: 42.031px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+}
+.items-More-Search a {
+	width: 79.102px;
+	height: 42.031px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+	text-decoration: none;
+	outline: 2px solid transparent;
+	outline-offset: 2px;
+	color: inherit;
+	background-color: #e6ebf1;
+	border-radius: 9999px;
+}
+.items-More-Search p {
+	font-family: "Nunito", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.63;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content__main--article10 {
+	width: 100%;
+	height: 208.945px;
+	padding: 20px 0px;
+	margin-left: 40px;
+}
+.content__main--article10 p {
+	font-size: 20px;
+    font-family: Nunito;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: rgb(46, 44, 54);
+	margin: 0px;
+}
+.Restaurants-10 { 
+	width: 100%;
+	height: 158.945px;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+}
+.Restaurants-10 a {
+	width: 83px;
+	height: 158.945px;
+	margin-right: 10px;
+}
+.Restaurants-10 img {
+	width: 75px;
+	height: 75px;
+}
+.Restaurants-10 p {
+	font-family: Nunito;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: normal;
+    color: #3870ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+/* Content of Us*/
+.content__main--articleUs {
+	width: 100%;
+	height: 522.402px;
+	background-color: rgb(255, 255, 255);
+}
+.Text_For_Us {
+	width: 1372.5px;
+	height: 82.070px;
+	text-align: center;
+	margin: 38px 0px;
+}
+.Text_For_Us p {
+	font-size: 72px;
+    font-family: "Goldplay-Bold";
+    font-weight: initial;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: rgb(46, 44, 54);
+	margin-top: 38px;
+	margin-bottom: 24px !important;
+}
+.Text_For_Us span {
+	color: rgb(255, 68, 31);
+    font-family: Goldplay-Bold;
+	font-weight: bold;
+}
+.Section-Us {
+	width: 100%;
+	height: 331.355px;
+	padding: 0px 30px;
+	margin-bottom: 30px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+	margin-bottom: 30px;
+}
+.Section-Box-Us {
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 8px;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(230, 235, 241);
+}
+.Img-Us {
+	width: 401px;
+	height: 140px;
+	margin: 0px;
+}
+.Img-Us img {
+	width: 100% !important;
+	border-radius: 8px 8px 0px 0px !important;
+	object-position: 0px 4% !important;
+	object-fit: cover !important;
+}
+.Text-For-Us {
+	padding: 0px 20px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+.Text-For-Us h3 {
+	padding: 0px 16px !important;
+	color: rgb(46, 44, 54);
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 1.5;
+	margin: 12px !important;
+}
+.Text-For-Us p {
+	color: rgb(106, 105, 110);
+    font-size: 14px;
+    font-family: Nunito;
+    font-weight: normal;
+    line-height: 1.71;
+    padding: 0px 6px;
+    margin-bottom: 20px !important;
+}
+.Button-Us {
+	display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-bottom: 22px;
+	background-color: transparent;
+	color: inherit;
+	text-decoration: inherit;
+}
+.Button-Us-Active {
+	width: 100%;
+    height: 48px;
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 1.63;
+	background-color: rgb(233, 252, 242);
+    color: rgb(41, 216, 132);
+	letter-spacing: normal;
+    text-align: center;
+    white-space: nowrap;
+    outline: none;
+    border-radius: 8px;
+    object-fit: contain;
+    border: none;
+    font-family: Nunito;
+    font-weight: 800;
+	cursor: pointer;
+}
+.Button-Us-Active:hover {
+	background-color: rgb(41, 216, 132);
+	color: rgb(233, 252, 242);
 }
