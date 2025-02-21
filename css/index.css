@@ -159,7 +159,7 @@ svg {
 /* Section Main*/
 .content_main {
 	width: 100%;
-	height: 1927.360px;
+	height: 1889.360px;
 	display: flex;
 	flex-direction: column;
 	/* justify-content: center; */
@@ -629,4 +629,125 @@ svg {
 .Button-Us-Active:hover {
 	background-color: rgb(41, 216, 132);
 	color: rgb(233, 252, 242);
+}
+
+/* Section Footer*/
+.footer {
+	padding-top: 40px;
+	width: 100%;
+	height: 1229.020px;
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+}
+.content-footer {
+	width: 100%;
+	height: 100%;
+	row-gap: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 0px 40px;
+	justify-content: center;
+}
+.content-footer__section {
+	padding: 0px;
+	max-width: 100%;
+	height: 100%;
+}
+.content-footer__section h4 {
+	margin: 0px;
+    font-family: Nunito;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: normal;
+}
+.content-footer__section ul {
+	max-width: 460px;
+    min-width: 100%;
+    padding: 10px 0px 0px;
+    margin: 0px;
+	list-style: none;
+	max-height: 100%;
+}
+.content-footer__section li {
+	display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    width: 180px;
+    height: auto;
+    min-height: 24px;
+    margin-bottom: 4px;
+    margin-right: 40px;
+	list-style: none;
+	font-family: Nunito;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-decoration: none;
+	color: rgb(46, 44, 54);
+}
+.networks {
+	width: 100%;
+	height: 50px;
+	margin: 0px 40px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.Logos-Marcas {
+	width: 30%;
+	height: 24px;
+	gap: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.Buttons_Install {
+	width: 40%;
+	max-height: 100%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	gap: 20px;
+}
+.Button {
+	width: 150px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+	background-color: rgb(94, 0, 190);
+	gap: 5px;
+}
+.Button p {
+	font-family: Nunito;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.63;
+	letter-spacing: normal;
+	color: rgb(255, 255, 255);
+	margin: 0px;
+	padding: 0px;
+}
+.Right-Reserved {
+	width: 100%;
+	text-align: center;
+	margin-top: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Right-Reserved p {
+	font-family: Nunito;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: rgb(106, 105, 110);
+	margin: 0px;
+	padding: 0px;
 }
