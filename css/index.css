@@ -751,7 +751,7 @@ svg {
 }
 
 /* Moviles */
-@media (max-width: 481px) {
+@media (max-width: 430px) {
 	/* Content header bar and header in general*/
 	.content-header {
 		display: grid;
