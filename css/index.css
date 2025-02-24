@@ -101,16 +101,21 @@ svg {
 	justify-content: center;
 }
 .Search_Background {
-	width: 100%;
+	width: 60%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	background-color: rgb(247, 248, 249);
 }
+.Search_Background form {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
 .icon-moustache {
 	width: 24px;
 	height: 24px;
-	margin: 10px 4px 10px 16px;
+	margin: 10px 0px 10px 16px;
 }
 .input-search {
 	width: 463px;
